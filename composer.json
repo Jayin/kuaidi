@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "monolog/monolog": "^1.19"
+        
     },
     "autoload": {
         "psr-4": {"Kuaidi\\": "src/"}
