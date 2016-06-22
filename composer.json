@@ -1,0 +1,17 @@
+{
+    "name": "jayin/kuaidi",
+    "description": "express query",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jayin Ton",
+            "email": "tonjayin@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.19"
+    },
+    "autoload": {
+        "psr-4": {"Kuaidi\\": "src/"}
+    }
+}
