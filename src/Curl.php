@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 // +----------------------------------------------------------------------
 // | Copyright (c) Zhutibang.Inc 2016 http://zhutibang.cn All rights reserved.
@@ -7,7 +7,6 @@
 // +----------------------------------------------------------------------
 
 namespace kuaidi;
-
 
 class Curl {
 
@@ -44,26 +43,4 @@ class Curl {
 
         return $return;
     }
-
-    function post($url, $data) {
-        $process = curl_init($url);
-        curl_setopt($process, CURLOPT_HTTPHEADER, $this->headers);
-        curl_setopt($process, CURLOPT_HEADER, 1);
-        curl_setopt($process, CURLOPT_USERAGENT, $this->user_agent);
-
-        curl_setopt($process, CURLOPT_ENCODING, $this->compression);
-        curl_setopt($process, CURLOPT_TIMEOUT, 30);
-        if ($this->proxy) {
-            curl_setopt($process, CURLOPT_PROXY, $this->proxy);
-        }
-        curl_setopt($process, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($process, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($process, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($process, CURLOPT_POST, 1);
-        $return = curl_exec($process);
-        curl_close($process);
-
-        return $return;
-    }
-
 }
