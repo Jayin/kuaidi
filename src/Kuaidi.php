@@ -14,8 +14,7 @@ class Kuaidi {
      * @param $postid 快递号
      * @return mixed
      */
-    public static
-    function query($type, $postid) {
+    public static function query($type, $postid) {
         $curl = new Curl();
         return json_decode($curl->get('http://www.kuaidi100.com/query?type='.$type.'&postid='.$postid));
     }

@@ -8,10 +8,8 @@ composer require "jayin/kuaidi"
 
 ## 使用
 
-
 ```php
 require_once("vendor/autoload.php");
-
 
 $info  = \Kuaidi\Kuaidi::query('yuantong', '882114232875886515');
 echo json_encode($info);
@@ -104,4 +102,20 @@ object(stdClass)#2 (2) {
   ["message"]=>
   string(60) "快递公司参数异常：单号不存在或者已经过期"
 }
+```
+
+## 快递公司编码
+
+```
+申通=”shentong” 
+EMS=”ems” 
+顺丰=”shunfeng” 
+圆通=”yuantong” 
+中通=”zhongtong” 
+韵达=”yunda” 
+天天=”tiantian” 
+汇通=”huitongkuaidi” 
+全峰=”quanfengkuaidi” 
+德邦=”debangwuliu” 
+宅急送=”zhaijisong”
 ```

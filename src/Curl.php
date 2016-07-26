@@ -10,13 +10,12 @@ namespace kuaidi;
 
 class Curl {
 
-    var $headers;
-    var $user_agent;
-    var $compression;
-    var $proxy;
+    public $headers;
+    public $user_agent;
+    public $compression;
+    public $proxy;
 
     function __construct($compression = 'gzip', $proxy = '') {
-        $this->headers[] = 'Accept: image/gif, image/x-bitmap, image/jpeg, image/pjpeg';
         $this->headers[] = 'Connection: Keep-Alive';
         $this->headers[] = 'Content-type: application/x-www-form-urlencoded;charset=UTF-8';
         $this->user_agent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0)';
