@@ -17,86 +17,58 @@ echo json_encode($info);
 
 正常响应：
 ```
-object(stdClass)#2 (9) {
-  ["nu"]=>
-  string(18) "882114232875886515"
+array(11) {
   ["message"]=>
   string(2) "ok"
+  ["nu"]=>
+  string(12) "229968891653"
+  ["companytype"]=>
+  string(8) "shentong"
   ["ischeck"]=>
-  string(1) "0"
+  string(1) "1"
   ["com"]=>
-  string(8) "yuantong"
+  string(8) "shentong"
   ["updatetime"]=>
-  string(19) "2016-06-23 00:45:25"
+  string(19) "2016-08-28 01:42:45"
   ["status"]=>
   string(3) "200"
   ["condition"]=>
-  string(2) "00"
+  string(3) "F00"
+  ["codenumber"]=>
+  string(12) "229968891653"
   ["data"]=>
-  array(6) {
+  array(8) {
     [0]=>
-    object(stdClass)#3 (3) {
+    array(4) {
       ["time"]=>
-      string(19) "2016-06-22 23:37:59"
+      string(19) "2016-08-01 18:15:15"
+      ["location"]=>
+      string(0) ""
       ["context"]=>
-      string(57) "泉州转运中心 已发出,下一站 广州转运中心"
+      string(36) "已签收,签收人是: 本人签收"
       ["ftime"]=>
-      string(19) "2016-06-22 23:37:59"
+      string(19) "2016-08-01 18:15:15"
     }
     [1]=>
-    object(stdClass)#4 (3) {
+    array(4) {
       ["time"]=>
-      string(19) "2016-06-22 23:37:49"
+      string(19) "2016-08-01 14:40:14"
+      ["location"]=>
+      string(0) ""
       ["context"]=>
-      string(28) "泉州转运中心 已收入"
+      string(71) "广东广州大学城(020-39383223) 的派件员 华师北 正在派件"
       ["ftime"]=>
-      string(19) "2016-06-22 23:37:49"
-    }
-    [2]=>
-    object(stdClass)#5 (3) {
-      ["time"]=>
-      string(19) "2016-06-22 20:55:13"
-      ["context"]=>
-      string(72) "福建省泉州市石狮市公司 已发出,下一站 泉州转运中心"
-      ["ftime"]=>
-      string(19) "2016-06-22 20:55:13"
-    }
-    [3]=>
-    object(stdClass)#6 (3) {
-      ["time"]=>
-      string(19) "2016-06-22 02:58:19"
-      ["context"]=>
-      string(43) "福建省泉州市石狮市公司 已打包"
-      ["ftime"]=>
-      string(19) "2016-06-22 02:58:19"
-    }
-    [4]=>
-    object(stdClass)#7 (3) {
-      ["time"]=>
-      string(19) "2016-06-21 23:24:52"
-      ["context"]=>
-      string(75) "福建省泉州市石狮市公司(点击查询电话) 已揽收&nbsp;&nbsp;"
-      ["ftime"]=>
-      string(19) "2016-06-21 23:24:52"
-    }
-    [5]=>
-    object(stdClass)#8 (3) {
-      ["time"]=>
-      string(19) "2016-06-21 22:18:11"
-      ["context"]=>
-      string(76) "福建省泉州市石狮市公司 取件人: 詹栋军 已收件&nbsp;&nbsp;"
-      ["ftime"]=>
-      string(19) "2016-06-21 22:18:11"
+      string(19) "2016-08-01 14:40:14"
     }
   }
   ["state"]=>
-  string(1) "0"
+  string(1) "3"
 }
 ```
 
 错误响应：
 ```
-object(stdClass)#2 (2) {
+array(2) {
   ["status"]=>
   string(3) "201"
   ["message"]=>

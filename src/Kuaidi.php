@@ -16,7 +16,7 @@ class Kuaidi {
      */
     public static function query($type, $postid) {
         $curl = new Curl();
-        return json_decode($curl->get('http://www.kuaidi100.com/query?type='.$type.'&postid='.$postid));
+        return json_decode($curl->get('http://www.kuaidi100.com/query?type='.$type.'&postid='.$postid), true);
     }
 
 }
