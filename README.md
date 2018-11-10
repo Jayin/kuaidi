@@ -11,7 +11,7 @@ composer require "jayin/kuaidi"
 ```php
 require_once("vendor/autoload.php");
 
-$info  = \Kuaidi\Kuaidi::query('yuantong', '882114232875886515');
+$info  = \Kuaidi\Kuaidi::query('yuantong', '882******15');
 echo json_encode($info);
 ```
 
@@ -21,7 +21,7 @@ array(11) {
   ["message"]=>
   string(2) "ok"
   ["nu"]=>
-  string(12) "229968891653"
+  string(12) "2299***1653"
   ["companytype"]=>
   string(8) "shentong"
   ["ischeck"]=>
@@ -35,7 +35,7 @@ array(11) {
   ["condition"]=>
   string(3) "F00"
   ["codenumber"]=>
-  string(12) "229968891653"
+  string(12) "229****1653"
   ["data"]=>
   array(8) {
     [0]=>
@@ -56,7 +56,7 @@ array(11) {
       ["location"]=>
       string(0) ""
       ["context"]=>
-      string(71) "广东广州大学城(020-39383223) 的派件员 华师北 正在派件"
+      string(71) "广东广州xxxxx的派件员 华师北 正在派件"
       ["ftime"]=>
       string(19) "2016-08-01 14:40:14"
     }
