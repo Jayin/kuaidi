@@ -1,5 +1,7 @@
 # 快递查询 [![Latest Stable Version](https://poser.pugx.org/jayin/kuaidi/v/stable.svg)](https://packagist.org/packages/jayin/kuaidi)
 
+**注意**该项目依赖的快递100接口已废弃无法使用了
+
 ## 安装
 
 ```
